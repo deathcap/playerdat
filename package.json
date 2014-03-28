@@ -10,8 +10,14 @@
     "voxel"
   ],
   "dependencies": {
-    "nbt": "^0.1.0"
+    "nbt": "^0.1.0",
+    "brfs": "^1.0.0"
   },
-  "peerDependencies": {},
+  "scripts": {
+    "start": "beefy index.js -- -t brfs"
+  },
+  "browser": {
+    "transform": "brfs"
+  },
   "license": "MIT"
 }
