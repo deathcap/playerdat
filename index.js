@@ -7,13 +7,29 @@ var Inventory = require('inventory');
 
 var id2name = {
   // TODO
-  default: 'gravel'
+  default: 'gravel',
+
+  1: 'stone',
+  2: 'cobblestone',
+  3: 'dirt',
+  4: 'grass',
+
+  257: 'pickaxeIron',
+
+  263: 'coal',
+
+  265: 'ingotIron',
+
+  270: 'pickaxeWood',
+  274: 'pickaxeStone',
+
+  280: 'stick',
 };
 
-var data = fs.readFileSync('test.dat');
+var data = fs.readFileSync('basic.dat');
 //var data = fs.readFileSync('../nbt-js/sample/bigtest.nbt');
 nbt.parse(data, function(err, result) {
-  //console.log(JSON.stringify(result,null, '  '));
+  console.log(JSON.stringify(result,null, '  '));
 
   if (result.Inventory) {
 
@@ -24,10 +40,11 @@ nbt.parse(data, function(err, result) {
 
       var name = id2name[result.Inventory[i].id] || id2name.default;
       var count = +result.Inventory[i].Count;
+      var slot = +result.Inventory[i].Slot;
       var pile = new ItemPile(name, count);
 
       //console.log(pile);
-      inventory.set(i, pile);
+      inventory.set(slot, pile);
     }
     console.log(inventory);
   }
