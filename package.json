@@ -1,13 +1,16 @@
 {
   "name": "playerdat",
-  "description": "",
+  "description": "load player.dat into an inventory",
   "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:deathcap/playerdat.git"
   },
   "keywords": [
-    "voxel"
+    "voxel",
+    "inventory",
+    "player",
+    "minecraft"
   ],
   "dependencies": {
     "nbt": "^0.1.0",
