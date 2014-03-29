@@ -16,10 +16,14 @@
     "inventory": "^0.1.2"
   },
   "scripts": {
-    "start": "beefy index.js -- -t brfs"
+    "start": "beefy test.js -- -t brfs",
+    "test": "node test.js"
   },
   "browser": {
     "transform": "brfs"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^2.12.0"
+  }
 }
