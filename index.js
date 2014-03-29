@@ -77,6 +77,8 @@ var id2name = {
 };
 
 var loadInventory = function(data, cb) {
+  if (data instanceof ArrayBuffer) data = new Buffer(new Uint8Array(data));
+
   nbt.parse(data, function(err, result) {
     //console.log(JSON.stringify(result,null, '  '));
 
