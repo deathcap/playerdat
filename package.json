@@ -13,7 +13,7 @@
     "minecraft"
   ],
   "dependencies": {
-    "nbt": "^0.1.0",
+    "nbt": "^0.3.0",
     "brfs": "^1.0.0",
     "itempile": "^0.2.1",
     "inventory": "^0.1.2"
