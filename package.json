@@ -1,7 +1,7 @@
 {
   "name": "playerdat",
   "description": "load player.dat into an inventory",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "git@github.com:deathcap/playerdat.git"
