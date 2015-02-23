@@ -14,7 +14,7 @@
     "minecraft"
   ],
   "dependencies": {
-    "nbt": "^0.3.0",
+    "nbt": "git://github.com/deathcap/nbt-js.git#deps",
     "brfs": "^1.4.0",
     "itempile": "^1.0.1",
     "inventory": "^1.0.0"
