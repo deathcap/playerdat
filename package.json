@@ -14,19 +14,20 @@
   ],
   "dependencies": {
     "nbt": "^0.3.0",
-    "brfs": "^1.0.0",
-    "itempile": "^0.2.1",
-    "inventory": "^0.1.2"
+    "brfs": "^1.4.0",
+    "itempile": "^1.0.1",
+    "inventory": "^1.0.0"
   },
   "scripts": {
     "start": "beefy test.js -- -t brfs",
-    "test": "node test.js"
+    "test": "browserify test.js | node"
   },
-  "browser": {
+  "browserify": {
     "transform": "brfs"
   },
   "license": "MIT",
   "devDependencies": {
-    "tape": "^2.12.0"
+    "browserify": "^9.0.3",
+    "tape": "^3.5.0"
   }
 }
