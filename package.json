@@ -1,7 +1,7 @@
 {
   "name": "playerdat",
   "description": "load player.dat into an inventory",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "playerdat.js",
   "repository": {
     "type": "git",
