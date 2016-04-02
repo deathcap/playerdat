@@ -15,9 +15,9 @@
   ],
   "dependencies": {
     "nbt": "^0.4.0",
-    "brfs": "^1.4.0",
-    "itempile": "^1.0.1",
-    "inventory": "^1.0.0"
+    "brfs": "^1.4.3",
+    "itempile": "^2.0.0",
+    "inventory": "^2.0.0"
   },
   "scripts": {
     "start": "beefy test.js -- -t brfs",
